@@ -1,0 +1,45 @@
+---
+title: "Welcome To My Blog"
+author: "Tristan O'Malley"
+date: "2022-12-25"
+categories: [news]
+---
+
+This is the first post in a Quarto blog. Welcome!
+
+![](thumbnail.jpg)
+
+Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+
+```{r}
+#| column: screen-inset-shaded
+#| echo: false
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+```
+
+```{r}
+#| column: screen-inset-shaded
+#| echo: false
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(
+    lng=151.22251, 
+    lat=-33.85943, 
+    label="Mrs Macquarie's Chair"
+  ) %>% 
+  addProviderTiles(providers$CartoDB.Positron)
+```
+
+
+
+
+
+
+
+
