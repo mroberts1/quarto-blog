@@ -2,18 +2,51 @@ project:
   type: website
 
 website:
-  title: "quarto-blog"
+  title: "Martin Roberts"
   navbar:
+    background: "#62259d"
+    search: true
     right:
-      - about.qmd
+      - icon: envelope
+        aria-label: envelope
+        href: mailto:martin_roberts@emerson.edu
+      - icon: mastodon
+        aria-label: mastodon
+        href: https://merveilles.town/@dokoissho
       - icon: github
-        href: https://github.com/
+        aria-label: github
+        href: https://github.com/mroberts1
+      - icon: facebook
+        aria-label: facebook
+        href: https://facebook.com/mr05301
       - icon: twitter
-        href: https://twitter.com
-format:
+        aria-label: twitter
+        href: https://twitter.com/mroberts_VMA
+  page-footer:
+    right: 
+      - text: "About"
+        href: about.qmd
+      - text: "License"
+        href: license.qmd
+format: 
   html:
-    theme: cosmo
-    css: styles.css
-
+    toc: false
+    toc-depth: 3  
+    toc-location: right
+    toc-title: '   '
+    theme: 
+      light: ember.scss
+      dark: quartz
+    css: custom.scss
+    fontsize: 1.1em
+    linestretch: 1.5
+    smooth-scroll: true
+    linkcolor: "#62259d"
+    page-layout: article
+    title-block-banner: true
+fig-responsive: true
+image-alt: " "
+execute:
+  echo: false
 editor: visual
 

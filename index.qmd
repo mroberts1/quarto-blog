@@ -1,14 +1,13 @@
 ---
-title: "quarto-blog"
+title: " "
+subtitle: " "
 listing:
   contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+  sort: "date asc"
+  type: grid
+  grid-columns: 3
+  fields: [title, date]
+page-layout: article
+title-block-banner: false
+comments: false
 ---
-
-
